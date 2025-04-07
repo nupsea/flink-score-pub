@@ -1,0 +1,21 @@
+# Flink JobManager configurations
+
+
+# Parallelism configuration
+execution.parallelism: 1
+
+# JobManager memory configuration
+jobmanager.memory.flink.size: 1024m
+jobmanager.heap.size: 1024m
+jobmanager.rpc.address: localhost
+
+# TaskManager JVM heap size
+taskmanager.heap.size: 1g
+
+# TaskManager memory configuration
+taskmanager.memory.process.size: 2g
+taskmanager.numberOfTaskSlots: 4
+taskmanager.memory.framework.heap: 256m
+taskmanager.memory.task.heap: 1g
+taskmanager.memory.managed: 512m
+taskmanager.heap.size: 1g
