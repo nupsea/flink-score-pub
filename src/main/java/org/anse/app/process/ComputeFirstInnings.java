@@ -31,7 +31,7 @@ public class ComputeFirstInnings extends ProcessWindowFunction<DeliveryEvent, Tu
         for (DeliveryEvent event : elements) {
             if (event.getExtraType() != null && event.getExtraType().equals("match_start")) {
                 clearState();
-                System.out.println("Clearing State..");
+                //System.out.println("Clearing State..");
             } else {
                 totalRuns += event.getTotalRun();
                 totalWickets += (event.getDismissalKind() != null && !event.getDismissalKind().isEmpty()) ? 1 : 0;

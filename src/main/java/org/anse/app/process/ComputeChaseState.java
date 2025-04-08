@@ -31,7 +31,7 @@ public class ComputeChaseState extends KeyedBroadcastProcessFunction<String, Del
     public void processElement(DeliveryEvent value, ReadOnlyContext ctx, Collector<ModelInput> out) throws Exception {
         if (value.getExtraType() != null && value.getExtraType().equals("match_start")) {
             clearState();
-            System.out.println("Clearing Second Innings State..");
+            // System.out.println("Clearing Second Innings State..");
         } else {
 
 
